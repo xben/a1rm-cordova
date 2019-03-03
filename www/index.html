@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+    <title>A1 Racing Manager</title>
+    <style>
+        html {
+            height: 100%;
+            background-color:#333;
+        }
+        body {
+            height: 100%;
+            margin: 0;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background: linear-gradient(to bottom, rgba(76,76,76,1) 0%,rgba(89,89,89,1) 12%,rgba(102,102,102,1) 25%,rgba(71,71,71,1) 39%,rgba(44,44,44,1) 50%,rgba(19,19,19,1) 84%); 
+            text-align:center;
+            margin:0;
+            padding:0;
+            font-family: Helvetica, Arial, Geneva, sans-serif;
+        }
+        a{text-decoration:none;color:white;}
+        #header{position: absolute; top:25%;padding: 0px 6px;width:100%;font-size:32px;}
+        #year{font-size:22px;margin-top:10px;color:grey;}
+        #loadMsg{font-size:26px;display:block;position:absolute;top: 70%;width:100%;background-color:red;background-image:-webkit-gradient(linear, 0 0, 0 60%, from(#c00), to(#f33));color:white;padding: 6px 0px;}
+        #container{position:absolute;width:100%;height:100%;}
+    </style>
+</head>
+
+<body>
+
+        <div id="container">
+                <div id="header">
+                    <a href="https://gem.a1racingmanager.de/">A1 Racing Manager</a>
+                    <div id="year">2019</div>
+                </div>
+                                
+				<a href="https://gem.a1racingmanager.de/" id="loadMsg">loading...</a><br/>
+			</div>
+            
+    <script type="text/javascript">
+        document.getElementById('year').innerHTML=new Date().getFullYear(); 
+    </script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+</body>
+
+</html>
