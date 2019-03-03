@@ -7,6 +7,6 @@
     <plugin name="cordova-plugin-device" source="npm" spec="~1.1.1" />
     <access origin="*" subdomains="true"/>
     <platform name="android">
-        <icon src="res/icon.png" />
+        <icon src="res/icon/android/icon.png" />
     </platform>
 </widget>
