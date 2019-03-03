@@ -2,10 +2,14 @@
 <widget id="com.a1racingmanager" version="1.0.18" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>A1 Racing Manager</name>
     <content src="index.html" />
+    
+    
     <preference name="orientation" value="portrait" />
     <plugin name="cordova-plugin-device" source="npm" spec="~1.1.1" />
     <access origin="*" subdomains="true"/>
     <platform name="android">
         <icon src="www/res/icon/android/icon.png" />
+        <preference name="android-minSdkVersion" value="14" />
+        <preference name="android-targetSdkVersion" value="26" />
     </platform>
 </widget>
