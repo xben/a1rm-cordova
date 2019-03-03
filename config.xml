@@ -4,7 +4,11 @@
     <content src="index.html" />
     <preference name="orientation" value="portrait" />
     <plugin name="cordova-plugin-device" source="npm" spec="~1.1.1" />
+    <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
     <access origin="*"/>
+    <allow-navigation href="*" />
     <platform name="android">
         <icon src="www/res/icon/android/icon.png" />
         <preference name="android-minSdkVersion" value="14" />
