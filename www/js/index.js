@@ -37,15 +37,6 @@ var app = {
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
-        console.log(device);
-        //alert(device.uuid);
-        //console.log('Received Event: ' + id);
-//TODO pass NEW DEVICE ID!?!?  store somewhere on server?!?!  neues DB feld?!?!
-// save only for the fist time of user....!??!
-//also wenn nicht gesetzt ist versuche auszulesen   ?di = device.uuid
-//TODO logos hinterlegen.....!?!
-//build apk with signing?!?!  einlesen in phongegap build cloud
-//was kommt nach github?!
-        window.location = "https://gem.a1racingmanager.de/";
+        window.location.href = "https://gem.a1racingmanager.de/";
     }
 };
